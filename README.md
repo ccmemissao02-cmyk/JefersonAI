@@ -1,22 +1,26 @@
-# Jeferson AI Android v0.2
+# Jeferson AI Android v0.3
 
-Projeto Android nativo, em Java, com interface inspirada na imagem criada.
+Projeto Android completo preparado para compilação automática pelo GitHub Actions.
 
-Inclui:
-- Chat
-- Memória
-- Roteirizador
-- Ferramentas
-- Configuração de conexão
-- Entrada por voz
-- Tema escuro
-- Preparação para conectar ao Jeferson AI local/Ollama
+## Estrutura
 
-## Abrir
-Abra a pasta no Android Studio e aguarde o Gradle sincronizar.
+- `app/build.gradle` — configuração do aplicativo Android
+- `app/src/main` — código, manifesto e recursos
+- `build.gradle` — configuração Gradle da raiz
+- `settings.gradle` — inclui o módulo `:app`
+- `.github/workflows/build-apk.yml` — compilação automática
 
-## APK
-O ambiente atual não possui Android SDK/Gradle configurado para compilar um APK aqui. O projeto está pronto para compilação no Android Studio.
+## Gerar APK
 
-## Próxima versão
-Conectar de verdade ao FastAPI/Ollama, persistir memória em SQLite/Room, histórico de conversas, pesquisa web e automações.
+1. Crie um repositório GitHub.
+2. Envie TODO o conteúdo deste projeto, mantendo as pastas.
+3. Abra a aba **Actions**.
+4. Execute **Gerar APK Jeferson AI**.
+5. Quando terminar, abra a execução.
+6. Na seção **Artifacts**, baixe `JefersonAI-APK`.
+
+O APK será `app-debug.apk`.
+
+## Observação
+
+Esta versão é a base Android funcional da interface. O chat ainda usa resposta local de demonstração; a conexão real com Ollama/FastAPI será a próxima etapa.
